@@ -1,0 +1,19 @@
+name: portfolio-export
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-zip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Create archive
+        run: zip -r portfolio-export.zip . -x "*.git*"
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: portfolio-export
+          path: portfolio-export.zip

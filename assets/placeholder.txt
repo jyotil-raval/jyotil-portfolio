@@ -1,0 +1,2 @@
+Assets such as architecture diagrams, flowcharts, and screenshots (non-confidential) go here.This folder contains non-confidential assets such as diagrams, flowcharts,
+and illustrations used in documentation.
